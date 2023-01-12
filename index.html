@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 27</title>
+</head>
+
+<body>
+
+    <!--
+Створіть функцію unique(arr), яка поверне масив унікальних значень масиву arr, 
+що не повторюються.
+
+function unique(arr) {
+ /* ваш код */
+}
+
+let values = ["Hare", "Krishna", "Hare", "Krishna", "Krishna", "Krishna", "Hare", "Hare", ":-O"];
+
+alert( unique(values) ); // Hare,Krishna,:-O
+    -->
+
+    <script>
+        function unique(arr) {
+            let set = new Set(arr);
+            return Array.from(set);
+        }
+
+        let values = ["Hare", "Krishna", "Hare", "Krishna", "Krishna", "Krishna", "Hare", "Hare", ":-O"];
+        alert(unique(values));
+    </script>
+
+</body>
+
+</html>
